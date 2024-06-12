@@ -1,11 +1,13 @@
 function solution(my_string) {
-    let answer = '';
+//     let answer = '';
     
-    [...my_string].forEach(str => {
-        if (!answer.includes(str)) {
-            answer += str;
-        }
-    })
+//     [...my_string].forEach(str => {
+//         if (!answer.includes(str)) {
+//             answer += str;
+//         }
+//     })
     
-    return answer;
+//     return answer;
+
+    return [...new Set(my_string)].join('');
 }
