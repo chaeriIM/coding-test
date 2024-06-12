@@ -1,4 +1,5 @@
 function solution(n, control) {
+    let answer = n;
     const wasd = {
         'w': 1,
         'a': -10,
@@ -6,5 +7,7 @@ function solution(n, control) {
         'd': 10
     }
     
-    return [...control].map(v => wasd[v]).reduce((a, b) => a + b, n);
+    control.split('').forEach(v => answer += wasd[v]);
+    
+    return answer;
 }
