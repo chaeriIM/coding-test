@@ -6,4 +6,6 @@ function solution(a, b) {
     }
     
     return result;
+    
+    // return a.reduce((acc, cur, i) => acc + cur * b[i], 0);
 }
