@@ -1,12 +1,13 @@
 function solution(t, p) {
     const l = p.length;
-    let num = [];
+    let count = 0;
     
     for (let i=0; i<t.length; i++) {
-        if (t.slice(i, i+l).length === l) {
-            num.push(Number(t.slice(i, i+l)));   
+        const n = t.slice(i, i+l);
+        if (n.length === l && Number(n) <= Number(p)) {
+            count++;  
         }
     }
     
-    return num.filter(n => n <= Number(p)).length;
+    return count;
 }
