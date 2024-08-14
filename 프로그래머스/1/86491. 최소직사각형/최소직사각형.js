@@ -1,5 +1,5 @@
 function solution(sizes) {
-    const arr = sizes.map(size => size[0] < size[1] ? [size[1], size[0]] : [size[0], size[1]]);
+    const arr = sizes.map(([w, h]) => w < h ? [h, w] : [w, h]);
     
     const width = [];
     const height = [];
