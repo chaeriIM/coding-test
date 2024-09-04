@@ -7,8 +7,7 @@ function solution(num_list) {
                 num /= 2;
                 result++;
             } else {
-                num -= 1;
-                num /= 2;
+                num = (num - 1) / 2;
                 result++;
             }
         }
