@@ -4,7 +4,7 @@ function solution(order) {
     order.forEach(o => {
        if (o.includes('americano') || o === 'anything') {
            result += 4500;
-       } else if (o.includes('cafelatte')) {
+       } else {
            result += 5000;
        }
     });
