@@ -1,10 +1,5 @@
-function solution(array, commands) {
-    let result = [];
-    
-    commands.forEach(([i, j, k]) => {
-        const arr = array.slice(i-1, j).sort((a, b) => a - b);
-        result.push(arr[k-1]);
+function solution(array, commands) {    
+    return commands.map(([i, j, k]) => {
+        return array.slice(i-1, j).sort((a, b) => a - b)[k-1];
     });
-    
-    return result;
 }
